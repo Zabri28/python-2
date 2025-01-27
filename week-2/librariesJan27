@@ -1,0 +1,18 @@
+"""
+numpy provides high performance ndaarray type to represent lists and matrices
+  -arrays are containers(contiguous elements) of the same data type
+  -arrays are more efficient for large data
+  np.array(objects) object value are of the same type
+  np.zeros(num)  create array of zeros
+  np.zeros(num, dtype=int)   create array of num zeros type int
+  np.arange(start, end, step)   like range
+  np.random.randinr(start, end, size)    fill aray with random numbers in the interval of [start,end)
+  np.ones((rows, columns, dtype = float))   fill rows by collums with floating point ones
+  np.full(rows,colums, value))  fill rows by columns matrix with value
+  np.random.randint(start, end, (rows, colums))   fill rows by columns by columns matrix with random number from interval
+"""
+import numpy as np
+arr = np.array9([1,2,3,4])
+a1 = np.zeros(10)
+a2 = np.zeros(10, dtype =int)
+  
