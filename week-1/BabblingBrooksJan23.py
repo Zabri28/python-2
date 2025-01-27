@@ -27,5 +27,34 @@ while True:
         result = splitStream(streamnumber,stream)
     if command == 88:
         result = joinStream(streamnumber, stream)
-print(stream)
+answer = ""
+for flow in stream:
+    answer += str(round(flow)) + " "
+print(answer)
+"""
+n = int(input())
+streams = []
+for i in range(n):
+    streams.append(int(input()))
+done = False
+while not done:
+    command = int(input())
+    if command == 77:
+        done = True
+    elif command == 99:
+        stream_num = int(input()) - 1
+        percentage = int(input())
+        left_flow = streams[stream_num] * percentage/100
+        right_flow = streams[stream_num] - left_flow
+        streams = streams[:stream_num] + [left_flow, right_flow] + streams[stream_num + 1:]
+    elif command == 88:
+        stream_num = int(input()) - 1
+        left_flow = streams[stream_num]
+        right_flow = stream[stream_num + 1]
+        streams = streams[:stream_num] + [left_flow + right_flow] + streams[stream_num +2:]
+    answer = ""
+    for flow in streams:
+        answer += + str(flow) + ""
+    print(answer)
+    """
 
