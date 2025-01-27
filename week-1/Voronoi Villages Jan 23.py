@@ -13,10 +13,10 @@ def calNeigh(index: int, positions) -> float:
     return left + right
 
 def villages(n):
-    n = int(input)
+    n = int(input(""))
     positions = []
     for i in range(n):
-        loc = int(input())
+        loc = int(input(""))
         positions.append(loc)
     positions.sort()
     sizes = []
